@@ -57,6 +57,12 @@ body {
     font-family: 'steppe-extrabold', sans-serif;
     font-size: 60px;
     line-height: 100%;
+    text-align: center;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -126,6 +132,7 @@ body {
 
 .products {
     padding: 100px 0;
+    position: relative;
 }
 
 .products-items {
@@ -186,7 +193,144 @@ body {
     font-size: 12px;
 }
 
+.love {
+    padding: 64px 0 150px;
+}
 
+.love-items {
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+}
 
+.love-item {
+    width: 590px;
+    height: 453px;
+}
 
+.love-item-white {
+    background-color: #ffffff;
+    padding: 110px 80px;
+    box-sizing: border-box;
+    color: #5d3427;
+}
 
+.love-item-title {
+    font-family: 'steppe-extrabold', sans-serif;
+    font-size: 24px;
+    line-height: 110%;
+    margin-bottom: 20px;
+}
+
+.love-item-text {
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.order {
+    padding-bottom: 102px;
+    position: relative;
+}
+
+.order .container {
+    position: relative;
+}
+
+.order-block {
+    margin-top: 103px;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(50px);
+    display: flex;
+}
+
+.order-form {
+    margin-left: 200px;
+    max-width: 387px;
+    padding: 40px 0 44px;
+    box-sizing: border-box;
+}
+
+.order-form-text {
+    font-family: 'steppe-extrabold', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.order-form-inputs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form-inputs input {
+    border: 1px solid white;
+    border-radius: 60px;
+    margin-bottom: 16px;
+    padding: 24px 22px;
+    font-size: 18px;
+    width: 385px;
+    height: 68px;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.order-form-inputs input .button.violet-button {
+    width: 387px;
+    height: 71px;
+}
+
+.order-block-image {
+    height: 501px;
+    margin-left: 109px;
+}
+
+.order-image {
+    height: 559px;
+    position: relative;
+    top: -58px;
+}
+
+.order-bg-image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 801px);
+    z-index: -1;
+}
+
+.footer {
+    padding: 126px 0 50px;
+    text-align: center;
+}
+
+.rights {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.line1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: calc(100% - 960px);
+}
+
+.line2 {
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 0;
+}
+
+.line3 {
+    position: absolute;
+    z-index: -1;
+    top: -920px;
+    left: 0;
+}
