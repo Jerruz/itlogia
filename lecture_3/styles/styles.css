@@ -280,7 +280,7 @@ body {
     color: rgba(255, 255, 255, 0.4);
 }
 
-.order-form-inputs input .button.violet-button {
+.order-form-inputs .button.violet-button {
     width: 387px;
     height: 71px;
 }
