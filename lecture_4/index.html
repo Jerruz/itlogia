@@ -19,9 +19,9 @@
             </div>
             <nav class="menu">
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="/#">Каталог</a></li>
-                    <li class="menu-item"><a href="/#">О нас</a></li>
-                    <li class="menu-item"><a href="/#">Оформление заказа</a></li>
+                    <li class="menu-item"><a data-link="products">Каталог</a></li>
+                    <li class="menu-item"><a data-link="love">О нас</a></li>
+                    <li class="menu-item"><a data-link="order">Оформление заказа</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,14 +40,14 @@
                     подарить вам истинное кулинарное наслаждение.
                 </p>
                 <div class="main-action">
-                    <button class="button" type="submit">Заказать</button>
+                    <button class="button" id="main-action-button" type="submit">Заказать</button>
                 </div>
             </div>
             <img class="main-image" src="./images/cookie.png" alt="Cookie">
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <div class="container">
             <img class="line2" src="./images/line2.png" alt="line2">
             <div class="common-title">
@@ -322,7 +322,7 @@
         </div>
     </section>
 
-    <section class="love">
+    <section class="love" id="love">
         <div class="container">
             <div class="common-title">Пекарня с любовью</div>
             <div class="love-items">
@@ -341,7 +341,7 @@
         </div>
     </section>
 
-    <section class="order">
+    <section class="order" id="order">
         <img class="line3" src="./images/line3.png" alt="">
         <div class="container">
             <div class="common-title">Закажите печенье</div>
@@ -377,5 +377,7 @@
 
 </main>
 
+
+<script src="./scripts/script.js"></script>
 </body>
 </html>
