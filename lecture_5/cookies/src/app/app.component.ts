@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {FormBuilder, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
@@ -108,6 +110,15 @@ productsData = [
   },
 ];
 
+form = this.fb.group({
+  product: ["", Validators.required],
+  name: ["", Validators.required],
+  phone: ["", Validators.required],
+});
+
+constructor(private fb: FormBuilder) {
+}
+
   scrollTo(target: HTMLElement) {
     target.scrollIntoView({behavior: 'smooth'});
   }
@@ -135,4 +146,12 @@ productsData = [
     });
 
   }
+
+  confirmOrder() {
+  if (this.form.valid) {
+    alert("Спасибо за заказ! Мы скоро свяжемся с Вами!");
+    this.form.reset();
+  }
+  }
+
 }

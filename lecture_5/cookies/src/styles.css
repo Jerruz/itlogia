@@ -46,11 +46,17 @@ body {
   color: white;
 }
 
-.button:hover {
+button:disabled {
+  cursor: not-allowed;
+  color: gray;
+  background-color: #343434;
+}
+
+.button:hover:not(:disabled) {
   background-color: #eee;
 }
 
-.button.violet-button:hover {
+.button.violet-button:hover:not(:disabled) {
   background-color: #3b2cd8;
 }
 
